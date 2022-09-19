@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+    <PackageReference Include="DocumentNumber.Portugal.Nif.Validator" Version="1.5.0" />
+    <PackageReference Include="DocumentNumber.Portugal.CitizenCard.Validator" Version="1.5.0" />
+    <PackageReference Include="DocumentNumber.Portugal.Niss.Validator" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="DocumentNumber.Portugal.Nif.Validator" />
+    <None Remove="DocumentNumber.Portugal.CitizenCard.Validator" />
+    <None Remove="DocumentNumber.Portugal.Niss.Validator" />
+  </ItemGroup>
+</Project>
